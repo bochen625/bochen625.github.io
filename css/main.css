@@ -1,0 +1,392 @@
+:root{
+	--text-colour: #414042;
+	--cta-colour: #5486E6;
+	--cta-faded-colour: #B5C8ED;
+	--iga-colour: #C23000;
+	--rbc-colour: #005DAA;
+	--main-bg-colour: #FFFFFF;
+	--alt-bg-colour: #FCFCFC;
+	/*Blur box: https://www.w3schools.com/cssref/css3_pr_box-shadow.asp*/
+	--drop-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.1); 	
+}
+
+/*-----------Typography-----------*/
+h1, h2, h3{
+	font-family: Poppins, sans-serif;
+}
+
+h1, h2, h3, body, p, a, ul{
+	color: var(--text-colour);
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: 1.1rem;
+}
+
+h3 {
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+body, p, a, ul{
+	font-size: 1rem;
+	font-family: Open Sans, sans-serif;
+}
+
+p{
+	margin-bottom: 2rem;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul, ol{
+	line-height: 2rem;
+}
+
+ul{
+	list-style:none;
+	margin-left: -2.5rem;
+}
+
+
+/*---nav bar---*/
+#rbc-navbar{
+	background-color: #D4DFF3;
+}
+
+#iga-navbar{
+	background-color: #F5EEE9;
+}
+
+#home-btn{
+	padding-top: 0.75rem;
+	font-family: Poppins, sans-serif;
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+nav li{
+	float: right;
+	margin-left: 4rem;
+}
+
+nav a{
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: var(--cta-colour);
+	text-decoration: underline;
+}
+
+nav a:focus, nav a:active{
+	color: var(--cta-colour);
+}
+
+/*--Home page--*/
+/*Intro*/
+
+#intro a:hover{
+	text-decoration: underline;
+}
+
+#intro h1{
+	width:clamp(20ch, 100%, 47ch);
+}
+
+#intro h2{
+	font-family: Open Sans, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	margin-top: 3rem;
+	width:clamp(20ch, 100%, 67ch);
+}
+
+#intro #seeking{
+	margin-top: 1rem;
+}
+
+/*Projects*/
+#work .overview-subheading{
+	color: #ccc;
+	font-weight: 400;
+}
+
+.horizontal-line{
+	width:100%;
+	border-top: 0.05rem solid #ccc;
+	margin-top: -2.75rem;
+}
+
+.proj-card{
+	background-color: var(--main-bg-colour);
+	box-shadow: var(--drop-shadow);
+	border-radius: 15px;
+}
+
+.proj-card a{
+	font-weight: 400;
+}
+
+/*Hover Tutorial:
+https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
+.proj-card:hover{
+	transform: scale(1.02);
+}
+
+.proj-card img{
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+}
+
+.proj-card .subheading{
+	margin-bottom: 0;
+}
+
+.proj-card h3{
+	margin-top: 0;
+}
+
+.proj-card .cta{
+	text-align: right;
+}
+
+/*cta*/
+.cta{
+	color: var(--cta-faded-colour);
+	font-weight: 600;
+}
+
+.proj-card a:hover{
+	color: var(--cta-colour);
+}
+
+/*--About Me--*/
+.bonnie{
+	width: 100%;
+	height: auto;
+}
+
+#about-section{
+	background-color: var(--alt-bg-colour);
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	margin-bottom: 10rem;
+}
+
+.about-connect a:hover{
+	font-weight: 500;
+}
+
+/*---Work---*/
+/*Back to top*/
+.back-top{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	margin-bottom: 5rem;
+	margin-right: 4rem;
+	opacity: 0.5;
+}
+
+.back-top:hover{
+	opacity: 1;
+}
+
+.hero{
+	position: relative;
+}
+
+.hero img{
+	width: 100%;
+	height: auto;
+}
+
+.hero .overview-subheading{
+	margin-bottom: 0;
+}
+
+.hero h1{
+	color: var(--cta-colour);
+	margin-top: 0;
+}
+
+/*Hero text:
+https://www.w3schools.com/howto/howto_css_hero_image.asp*/
+.hero-text {
+	text-align: center;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#iga-h1{
+	color: var(--iga-colour);
+	font-weight: 600;
+}
+
+.rbc{
+	color: var(--rbc-colour);
+}
+
+.iga{
+	color: var(--iga-colour);
+}
+
+#rbc-h1{
+	font-weight: 600;
+	color: var(--rbc-colour);
+}
+
+.content{
+	margin-top: 5rem;
+}
+
+.content img{
+	width: 100%;
+	height: auto;
+}
+
+#design-overview p{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.proj-img{
+	margin-top: 5rem;
+}
+
+/*Section styling*/
+.content-with-bg{
+	background-color: var(--alt-bg-colour);
+}
+
+.proj-section{
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+	background-color: var(--alt-bg-colour);
+}
+
+/*Subheading styling*/
+.subheading, .overview-subheading{
+	font-family: Poppins, sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.subheading{
+	color: #057EE2;
+}
+
+.overview-subheading{
+	color: #414042;
+}
+
+/*Image captions*/
+.caption{
+	font-size: 0.75rem;
+	font-weight: 400;
+	font-style: italic;
+	float: right;
+}
+
+#results .caption{
+	margin-top: -2.5rem;
+}
+
+/*--Citations--*/
+.bold{
+	font-weight: 700;
+}
+
+/*--Style Guide--*/
+.style-guide-content{
+	margin-bottom: 3rem;
+}
+/*Colours Palette*/
+.colour-palette-container{
+	background-color: white;
+	box-shadow: var(--drop-shadow);
+}
+
+.color-palette{
+	height: 6rem;
+}
+
+#prim-colour{
+	background-color: var(--cta-colour);
+}
+
+#sec-warm-colour{
+	background-color: var(--iga-colour);
+}
+
+#sec-cool-colour{
+	background-color: var(--rbc-colour);
+}
+
+#text-colour{
+	background-color: var(--text-colour);
+}
+
+#bg-colour{
+	background-color: var(--bg-colour);
+}
+
+#alt-bg-colour{
+	background-color: var(--alt-bg-colour);
+}
+
+.color-details{
+	margin-left: 0;
+	padding-bottom: 1rem;
+}
+
+/*Code Snippets*/
+.code-snippet{
+	background-color: #d6d4d4;
+	height: 10rem;
+	padding-left: 2rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	margin-top: 2rem;
+	overflow-y: auto;
+}
+/*Grid*/
+.grid-container{
+	background-color: var(--alt-bg-colour);
+}
+.grid{
+	background-color: var(--cta-colour);
+	height: 15rem;
+	margin-bottom: 2rem;
+}
+
+/*--Footer--*/
+footer{
+	background-color: var(--text-colour);
+	z-index: 2;
+	position: relative;
+}
+
+footer a, footer p{
+	color: white;
+}
+
+footer a:hover{
+	font-weight: 500;
+	text-decoration: underline;
+}
