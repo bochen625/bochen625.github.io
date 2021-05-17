@@ -25,6 +25,10 @@ nav ul{
 	margin-bottom: 0;
 }
 
+#intro h1{
+	width:clamp(20ch, 100%, 35ch);
+}
+
 .home-about{
 	grid-column: 2/span 8;
 }
@@ -59,6 +63,12 @@ nav ul{
 	padding-bottom: 0;
 }
 
+.proj-card img{
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+}
+
 .proj-card:nth-of-type(2){
 	grid-column: 2/span 5;
 }
@@ -85,6 +95,8 @@ nav ul{
 .proj-card .cta{
 	grid-column: 2/span 1;
 	grid-row: 3;
+	text-align: right;
+	margin-top: 10px;
 }
 
 /*----About Me---*/
@@ -142,115 +154,10 @@ video{
 	grid-column: 8/span 3;
 }
 
-/*--Citations--*/
-.citations{
-	grid-column: 2/span 6;
-	margin-top: 5rem;
-	margin-bottom: 25rem;
-}
-
 /*----Footer---*/
 .footer-contact{
 	grid-column: 1/span 4;
 	margin-left: 2.5rem;
-}
-
-/*--Style Guide--*/
-.style-guide-content{
-	grid-column: 2/span 10;
-}
-/*Colours*/
-#colour-grid{
-	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	grid-column-gap: 1.875rem;
-}
-
-#colour-grid h2{
-	grid-column: 1/span 12;
-}
-
-.colour-palette-container{
-	margin-bottom: 2rem;
-}
-
-.colour-palette-container:first-of-type{
-	grid-column: 1/span 3;
-}
-
-.colour-palette-container:nth-of-type(2){
-	grid-column: 4/span 3;
-}
-
-.colour-palette-container:nth-of-type(3){
-	grid-column: 7/span 3;
-}
-
-.colour-palette-container:nth-of-type(4){
-	grid-column: 1/span 3;
-}
-
-.colour-palette-container:nth-of-type(5){
-	grid-column: 4/span 3;
-}
-
-.colour-palette-container:nth-of-type(6){
-	grid-column: 7/span 3;
-}
-
-/*--Grid structure--*/
-#desktop-container{
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-column-gap: 1.875rem;
-}
-
-#desktop-one{
-	grid-column: 1/span 1;
-}
-
-#desktop-two{
-	grid-column: 2/span 1;
-}
-
-#desktop-three{
-	grid-column: 3/span 1;
-}
-
-#desktop-four{
-	grid-column: 4/span 1;
-}
-
-#desktop-five{
-	grid-column: 5/span 1;
-}
-
-#desktop-six{
-	grid-column: 6/span 1;
-}
-
-#desktop-seven{
-	grid-column: 7/span 1;
-}
-
-#desktop-eight{
-	grid-column: 8/span 1;
-}
-
-#desktop-nine{
-	grid-column: 9/span 1;
-}
-
-#desktop-ten{
-	grid-column: 10/span 1;
-}
-
-#desktop-eleven{
-	grid-column: 11/span 1;
-}
-
-#desktop-twelve{
-	grid-column: 12/span 1;
 }
 
 footer p{
@@ -440,56 +347,6 @@ footer p{
 		grid-column: 1/span 4;
 		margin-bottom: 2rem;
 	}
-	/*--Style Guide--*/
-	/*Colours*/
-	#colour-grid{
-		grid-template-columns: repeat(4, 1fr);
-		grid-column-gap: 1rem;
-	}
-
-	#colour-grid h2{
-		grid-column: 1/span 4;
-	}
-
-	.colour-palette-container{
-		margin-bottom: 2rem;
-	}
-
-	.colour-palette-container:first-of-type{
-		grid-column: 1/span 4;
-	}
-
-	.colour-palette-container:nth-of-type(2){
-		grid-column: 1/span 4;
-	}
-
-	.colour-palette-container:nth-of-type(3){
-		grid-column: 1/span 4;
-	}
-
-	.colour-palette-container:nth-of-type(4){
-		grid-column: 1/span 4;
-	}
-
-	.colour-palette-container:nth-of-type(5){
-		grid-column: 1/span 4;
-	}
-
-	.colour-palette-container:nth-of-type(6){
-		grid-column: 1/span 4;
-	}
-
-	/*Grid*/
-	#desktop-container{
-		grid-template-columns: repeat(4, 1fr);
-		grid-column-gap: 1rem;
-	}
-
-	#desktop-five, #desktop-six, #desktop-seven, #desktop-eight, #desktop-nine, #desktop-ten, #desktop-eleven, #desktop-twelve{
-		display: none;
-	}
-
-	/*--Citations--*/
 
 	/*----Footer---*/
 	.footer-contact{
@@ -511,41 +368,40 @@ footer p{
 }
 
 @media screen and (max-width:34.25em){
+
+} 
+
+@media screen and (max-width:20em){
 	#intro h1, #intro h1 a{
 		font-size: 1.5rem;
 	}
+	#intro h1{
+		width:clamp(12ch, 100%, 35ch);
+	}
 
-	#intro h2{
-		font-size: 1rem;
+	#work .overview-subheading{
+		grid-column: 1/span 3;
+	}
+
+	.horizontal-line{
+		grid-column: 3/span 2;
 	}
 
 	/*proj cards*/
 	.proj-card{
-		margin-top: 2rem;
-		padding: 0.75rem;
-		padding-bottom: 0;
+		padding: 1rem;
+		margin-top: 0;
+		margin-bottom: 2rem;
 	}
 
-	.proj-card a{
-		grid-row: 3;
-		grid-column: 1/span 4;
-	}
-
-	
-	/*Project cards*/
 	.proj-card img{
-		grid-column: 1/span 4;
-		grid-row: 1;
+		border-radius: 5px;
 	}
 
-	.proj-card .subheading{
-		grid-column: 1/span 4;
-		grid-row: 2;
+	.proj-card .cta{
+		grid-row: 4;
+		margin-top: -1rem;
 	}
 
-	.proj-card h3{
-		grid-column: 1/span 4;
-		grid-row: 3;
-	}
-
-} 
+	.cover{
+}
