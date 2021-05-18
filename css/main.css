@@ -254,6 +254,12 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 	margin-top: 5rem;
 }
 
+/*Process Image Styling*/
+.process-img{
+	width: 100%;
+	height: auto;
+}
+
 /*Section styling*/
 .content-with-bg{
 	background-color: var(--alt-bg-colour);

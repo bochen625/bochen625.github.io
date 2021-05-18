@@ -154,6 +154,11 @@ video{
 	grid-column: 8/span 3;
 }
 
+/*Project: RBC*/
+#research img{
+	grid-column: 3/span 6;
+}
+
 /*----Footer---*/
 .footer-contact{
 	grid-column: 1/span 4;
