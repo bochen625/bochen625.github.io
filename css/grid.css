@@ -372,18 +372,17 @@ footer p{
 	}
 }
 
-@media screen and (max-width:34.25em){
-
-} 
-
-@media screen and (max-width:20em){
+@media screen and (max-width:33.5em){
 	#intro h1, #intro h1 a{
-		font-size: 1.5rem;
+		font-size: 1.75rem;
 	}
+	
 	#intro h1{
 		width:clamp(12ch, 100%, 35ch);
 	}
+} 
 
+@media screen and (max-width:20em){
 	#work .overview-subheading{
 		grid-column: 1/span 3;
 	}
@@ -409,4 +408,5 @@ footer p{
 	}
 
 	.cover{
+	}
 }
